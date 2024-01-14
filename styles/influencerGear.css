@@ -54,7 +54,7 @@ nav > ul li a {
   width: 80%;
 }
 
-.banner-btn {
+.banner-btn,.product-btn {
   position: relative;
   display: inline-flex;
   padding: 12px 24px;
@@ -65,10 +65,10 @@ nav > ul li a {
   cursor: pointer;
   transition: all 2s;
 }
-.banner-btn:hover {
+.banner-btn:hover,.product-btn:hover {
   background-color: #d20d55;
 }
-.banner-btn p {
+.banner-btn p,.product-btn span {
   color: #fff;
   font-size: 1rem;
   margin-right: 0.5rem;
@@ -138,33 +138,62 @@ main {
     text-align: end;
 }
 
+.product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+    margin: 6.25rem 0;
+}
+.product-content p{
+    margin: 1rem 0;
+    width: 80%;
+}
 
+footer{
+    background-color: #0A0826;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+footer h2{
+    color: #fff;
+    margin-top: 3rem;
+}
+footer p{
+    color: #fff;
+}
+footer .right {
+    margin-bottom: 1rem;
+}
+.social-media > ul{
+display: flex ;
+gap: 20px;
+margin-bottom: 3rem;
+}
 
+.social-media li {
+    list-style: none;
+}
 
+.social-media li a{
+    text-decoration: none;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social-media li a img{
+    background-color:  #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
 
 /* Media Query */
 
 @media screen and (max-width: 576px) {
   nav,
-  .banner {
+  .banner,.product {
     flex-direction: column;
     align-items: center;
   }
