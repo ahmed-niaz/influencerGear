@@ -13,10 +13,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.logo{
-    color: var(--text-color);
-    font-size: 1.5rem;
-    font-weight: 700;
+.logo {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 nav {
   display: flex;
@@ -55,7 +55,7 @@ nav > ul li a {
 }
 
 .banner-btn {
-    position: relative;
+  position: relative;
   display: inline-flex;
   padding: 12px 24px;
   border-radius: 2.5rem;
@@ -66,14 +66,13 @@ nav > ul li a {
   transition: all 2s;
 }
 .banner-btn:hover {
-    background-color: #d20d55;
+  background-color: #d20d55;
 }
-.banner-btn p{
-    color: #fff;
-    font-size: 1rem;
-
-    margin-right: .5rem;
-    font-weight: 700;
+.banner-btn p {
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
 }
 .banner-image {
   background-image: url("../assets/images/Circledesign.svg");
@@ -85,17 +84,82 @@ nav > ul li a {
   margin-top: 2.815rem;
 }
 
-
-/* Media Query */
-
-@media screen and (max-width:576px){
-    nav,.banner{
-        flex-direction: column;
-    }
+main {
+  margin: 6rem auto;
 }
 
-@media screen and (min-width:576px) and (max-width:960px){
-    nav,.banner{
-        flex-direction: column;
-    }
+.sponsors {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(
+    40deg,
+    rgba(101, 98, 83, 0.6587009803921569) 0%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(103, 95, 74, 0.5942752100840336) 100%
+  );
+  border-image-slice: 1;
+}
+.sponsors img {
+  width: 80%;
+  margin: 0 auto;
+}
+/* Media Query */
+
+@media screen and (max-width: 576px) {
+  nav,
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-title{
+    text-align: center;
+    font-size: 2.25rem;
+}
+.banner-description{
+    margin: 0 auto;
+}
+  .sponsors {
+    border: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .sponsors img {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav,
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+.banner-title{
+    text-align: center;
+}
+.banner-description{
+    margin: 0 auto;
+}
+  .sponsors {
+    border: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .sponsors img {
+    width: 20%;
+  }
+}
+
+.hide {
+  display: none;
 }
